@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio Virtual</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #111;
+            color: #ffd700;
+            padding: 20px 0;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif; /* Fonte gourmet */
+            font-size: 48px; /* Aumenta o tamanho da fonte */
+            font-weight: bold; /* Deixa o texto em negrito */
+            font-style: italic; /* Texto em itálico */
+            text-decoration: underline; /* Texto sublinhado */
+            background: linear-gradient(90deg, #dcd5d3, #fff); /* Aplica o degradê */
+            -webkit-background-clip: text; /* Para mostrar o degradê apenas no texto */
+            color: transparent; /* Para que a cor sólida do texto seja transparente e o degradê apareça */
+            margin: 0;
+        }
+
+        .menu-section {
+            padding: 20px;
+        }
+
+        .menu-category {
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        .menu-category h2 {
+            font-size: 24px;
+            color: #ffd700;
+            margin: 0;
+            padding: 10px;
+            background-color: #222;
+            border-radius: 5px;
+        }
+
+        .menu-items {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 10px 0;
+            font-size: 18px;
+            background-color: #111;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .menu-item img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+
+        .menu-item-name {
+            flex-grow: 1;
+            text-align: left;
+        }
+
+        .menu-item span {
+            color: #ffd700;
+            font-weight: bold;
+        }
+
+        .logo {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .logo img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logo">
+        <img src="img/logo.png" alt="Logo do Restaurante">
+    </div>
+
+    <section class="menu-section">
+        <div class="menu-category">
+            <h2>Entradas</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="img/salada-verde.jpg" alt="Salada Verde">
+                    <div class="menu-item-name">Salada Verde</div>
+                    <span>R$ 12,00</span>
+                </div>
+                <div class="menu-item">
+                    <img src="img/bruschetta.jpg" alt="Bruschetta">
+                    <div class="menu-item-name">Bruschetta</div>
+                    <span>R$ 15,00</span>
+                </div>
+                <div class="menu-item">
+                    <img src="img/tabua-bonita.jpg" alt="Tábua de Frios">
+                    <div class="menu-item-name">Tábua de Frios</div>
+                    <span>R$ 25,00</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h2>Pratos Principais</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="img/file-a-parmegiana.jpg" alt="Filé à Parmegiana">
+                    <div class="menu-item-name">Filé à Parmegiana</div>
+                    <span>R$ 35,00</span>
+                </div>
+                <div class="menu-item">
+                    <img src="img/risoto-de-camarao.jpg" alt="Risoto de Camarão">
+                    <div class="menu-item-name">Risoto de Camarão</div>
+                    <span>R$ 45,00</span>
+                </div>
+                <div class="menu-item">
+                    <img src="img/moqueca-de-peixe.jpg" alt="Moqueca de Peixe">
+                    <div class="menu-item-name">Moqueca de Peixe</div>
+                    <span>R$ 50,00</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h2>Sobremesas</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="img/pudim-de-leite-condensado.jpg" alt="Pudim de Leite">
+                    <div class="menu-item-name">Pudim de Leite</div>
+                    <span>R$ 10,00</span>
+                </div>
+                <div class="menu-item">
+                    <img src="img/torta-de-limao.jpg" alt="Torta de Limão">
+                    <div class="menu-item-name">Torta de Limão</div>
+                    <span>R$ 12,00</span>
+                </div>
+                <div class="menu-item">
+                    <img src="img/petit-gateau-scaled.jpg" alt="Petit Gâteau">
+                    <div class="menu-item-name">Petit Gâteau</div>
+                    <span>R$ 18,00</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <h2>Bebidas</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="img/suco-natural.jpg" alt="Suco Natural">
+                    <div class="menu-item-name">Suco Natural</div>
+                    <span>R$ 8,00</span>
+                </div>
+                <div class="menu-item">
+                    <img src="img/refrigerante.jpg" alt="Refrigerante">
+                    <div class="menu-item-name">Refrigerante</div>
+                    <span>R$ 6,00</span>
+                </div>
+                <div class="menu-item">
+                    <img src="img/cerveja-artesanal.jpg" alt="Cerveja Artesanal">
+                    <div class="menu-item-name">Cerveja Artesanal</div>
+                    <span>R$ 15,00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ívano Fontes Desenvolvimento Web</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.menu-category').forEach(function(category) {
+            category.addEventListener('click', function() {
+                const items = this.querySelector('.menu-items');
+                if (items.style.display === 'block') {
+                    items.style.display = 'none';
+                } else {
+                    items.style.display = 'block';
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
